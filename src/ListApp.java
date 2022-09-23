@@ -33,7 +33,7 @@ public class ListApp {
 
     /*
     mensorting data dengan menggunakan Class Collection
-    * kita harus implements dulu ke Comparator 
+    * kita harus implements dulu ke Comparator
      */
     Collections.sort(integerList,new SortListApp());
     for (var number : integerList){
