@@ -7,7 +7,6 @@ public class ListApp {
     link.addAll(Arrays.asList(6,4,7,1,9,3));
     System.out.println(link.contains(4));
     link.removeAll(Arrays.asList(6,9,3));
-    System.out.println(link);
 
     /*
     menuliskan beberapa element secara langsung
@@ -31,6 +30,16 @@ public class ListApp {
      */
 
     System.out.println(integerList.contains(13));
+
+    /*
+    mensorting data dengan menggunakan Class Collection
+    * kita harus implements dulu ke Comparator 
+     */
+    Collections.sort(integerList,new SortListApp());
+    for (var number : integerList){
+      System.out.print(number);//ini berurut dari kanan ke kiri
+    }
+
 
   }
 
