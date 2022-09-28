@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -29,7 +30,79 @@ public class AksesImutableApp {
      */
 
 
+    /*
+    Ini adalah imutable list pada 1 data saja
+
+
+    List<String> list = Collections.singletonList("test");
+    System.out.println(list);
+    */
+
+    /*
+    List<Object> objectList = new ArrayList<>();
+    objectList.add("fajar");
+    objectList.add("nisa");
+    objectList.add("ujeh");
+    objectList.add("uyen");
+    for (var x : objectList){
+      System.out.println(x);
+    }
+    List<Object> imutableObject = Collections.unmodifiableList(objectList);
+    System.out.println(imutableObject);//akan mencetak data array yang ada di mutable
+    // di bawah ini error bila dijalankan
+    imutableObject.add("sandi");
+    for (var y : imutableObject){
+      System.out.println(y);
+    }
+
+     */
+
+
+    /*
+    di bawah ini membuat immutable 1 per 1 (elemen yang dimasukkan terserah dan akan menjadi imutable)
+
+
+
+    List<Object> elemen = List.of("fajar","nissa","ujeh");
+    for (var print: elemen ){
+      System.out.println(print);
+    }
+
+
+     */
+
+
   }
+
+  /*
+  public static class Person<T>{
+    private String name;
+    private List<String> list;
+
+    public Person(String name) {
+      this.name = name;
+      this.list = new ArrayList<>(list);
+    }
+
+    public String getName() {
+      return name;
+    }
+
+    public void setName(String name) {
+      this.name = name;
+    }
+
+    public List<String> getList() {
+      return list;
+    }
+
+    public void setList(List<String> list) {
+      this.list = list;
+    }
+  }
+
+
+   */
 
   public static void doSomeThinkWithHobbies(List<String> hobbies){
     /*
