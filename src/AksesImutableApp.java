@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.List;
 
 public class AksesImutableApp {
@@ -13,6 +14,20 @@ public class AksesImutableApp {
     for (var hobi : imutableApp.getHobbies()){
       System.out.println(hobi);
     }
+
+
+    /*
+    ini membuat imutable list dengan list yang kosong(kita bisa menambahkan beberapa list di dalamnya)
+     List<String> one = Collections.emptyList();
+    one.add("fajar");
+    one.add("abdillah");
+    one.add("ahmad");
+    for (var i : one){
+      System.out.println(i);
+    }
+
+     */
+
 
   }
 
