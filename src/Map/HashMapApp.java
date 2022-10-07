@@ -10,6 +10,7 @@ public class HashMapApp {
     /*
     * HashMap mendistribusikan KEY menggunakan    hashcode function
     * KEY yang ada tidak boleh diplicate.ini karna pengecekannya menggunakan Equals()
+    * urutan Map yang menggunakan HashMap akan random(tidak sesuai dengan penulisan)
      */
     Map<String,Integer> uas = new HashMap<>();
     System.out.println("===== nama-nama peserta ujian CPNS ======");
